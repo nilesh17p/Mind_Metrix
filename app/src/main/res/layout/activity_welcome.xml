@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080914"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <!-- App Logo -->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#272F49"
+            android:gravity="center"
+            android:text="🧠"
+            android:textSize="55sp" />
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="MIND METRIX"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Train Your Brain. Measure Your Mind."
+            android:textColor="#AFA8FF"
+            android:textSize="14sp"
+            android:gravity="center" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Welcome!"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Discover your cognitive abilities and challenge your mind with Mind Metrix."
+            android:textColor="#D0D5E8"
+            android:textSize="15sp"
+            android:lineSpacingExtra="5dp" />
+
+        <!-- Guest Button -->
+        <Button
+            android:id="@+id/btnContinueGuest"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="38dp"
+            android:backgroundTint="#8273FF"
+            android:text="Continue as Guest"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnWelcomeLogin"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#272F49"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnWelcomeSignup"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#272F49"
+            android:text="Create New Account"
+            android:textAllCaps="false"
+            android:textColor="#AFA8FF"
+            android:textSize="16sp" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Your mind. Your progress. Your potential."
+            android:textColor="#8D96B5"
+            android:textSize="12sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>

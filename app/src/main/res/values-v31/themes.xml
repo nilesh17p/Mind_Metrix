@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="Theme.MindMetrix.Starting"
+        parent="Theme.MindMetrix">
+
+        <item name="android:windowSplashScreenBackground">
+            #101426
+        </item>
+
+        <item name="android:windowSplashScreenAnimatedIcon">
+            @drawable/mind_metrix_logo
+        </item>
+
+        <item name="android:windowSplashScreenAnimationDuration">
+            500
+        </item>
+
+    </style>
+
+</resources>
+

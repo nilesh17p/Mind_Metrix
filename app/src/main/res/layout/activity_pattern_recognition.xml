@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101426"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvPatternTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pattern Recognition"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvPatternInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observe the pattern and find what comes next."
+            android:textColor="#D0D5E8"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <!-- Game status -->
+        <TextView
+            android:id="@+id/tvPatternStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press Start to begin"
+            android:textColor="#AFA8FF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="25dp" />
+
+        <!-- Round and score -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tvPatternRound"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Round: 0/10"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvPatternScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Score: 0"
+                android:textColor="#FFD84D"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Puzzle card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#272F49"
+            android:padding="16dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FIND THE MISSING PATTERN"
+                android:textColor="#D0D5E8"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPatternQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔴  🔵  🔴  🔵  ❓"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tvPatternHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose the correct option below"
+                android:textColor="#D0D5E8"
+                android:textSize="13sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Answer heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECT YOUR ANSWER"
+            android:textColor="#AFA8FF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp" />
+
+        <!-- Answer option 1 -->
+        <Button
+            android:id="@+id/btnPatternOption1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:text="Option 1"
+            android:textAllCaps="false"
+            android:enabled="false" />
+
+        <!-- Answer option 2 -->
+        <Button
+            android:id="@+id/btnPatternOption2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:text="Option 2"
+            android:textAllCaps="false"
+            android:enabled="false" />
+
+        <!-- Answer option 3 -->
+        <Button
+            android:id="@+id/btnPatternOption3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:text="Option 3"
+            android:textAllCaps="false"
+            android:enabled="false" />
+
+        <!-- Answer option 4 -->
+        <Button
+            android:id="@+id/btnPatternOption4"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:text="Option 4"
+            android:textAllCaps="false"
+            android:enabled="false" />
+
+        <!-- Result message -->
+        <TextView
+            android:id="@+id/tvPatternResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#2EB482"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <!-- Start button -->
+        <Button
+            android:id="@+id/btnStartPatternGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Start Pattern Recognition"
+            android:textAllCaps="false" />
+
+        <!-- History button -->
+        <Button
+            android:id="@+id/btnPatternHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="View Pattern History"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>
